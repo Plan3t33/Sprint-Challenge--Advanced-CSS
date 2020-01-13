@@ -1,19 +1,19 @@
-header {
+.nav-container {
   display: flex;
   width: 100%;
   flex-direction: column;
-  align-content: center;
-  background-color: silver;
+  align-content: @align;
+  background-color: @header-background-color;
 
   h1 {
     font-size: 3.5rem;
-    align-self: center;
+    align-self: @align;
     padding: 1%;
   }
 
   nav {
     display: flex;
-    justify-content: center;
+    justify-content: @align;
 
     a {
       margin: 1.5%;
@@ -22,4 +22,16 @@ header {
       color: black;
     }
   }
+}
+
+.btn {
+  .buttonStyle(white, black);
+
+  :hover {
+    background-color: white;
+  }
+}
+
+.btn a:hover {
+  color: black;
 }
