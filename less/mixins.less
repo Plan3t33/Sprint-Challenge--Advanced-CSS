@@ -1,1 +1,20 @@
-// Mixins Here
+.buttonStyle(@color, @background) {
+  display: flex;
+  font-size: 1.5rem;
+  background-color: @background;
+  color: @color;
+  border-radius: 10px;
+  padding: 3% 2%;
+  max-width: 30%;
+  font-weight: bold;
+  justify-content: @align;
+
+  @media @phone {
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
